@@ -99,3 +99,31 @@ if(stringg === reverseword){
 }
 console.log(ispalindrome("madam"));
 console.log(ispalindrome("SCHOOL"));
+// largest num of an array
+let arre = [1000, 45, 67, 87, 34, 87, 35, 75500]
+function largestnumofArray(array){
+let largest = array[0];
+for(let i = 0; i < array.length; i++){
+    let currentelement = array[i]
+  if(currentelement > largest){
+    largest = currentelement;
+  }
+}
+return largest;
+}
+console.log(largestnumofArray([34, 56, 78, 67,45, 1000]));
+console.log(largestnumofArray(arre));
+// samllest num of and array
+let arr = [1000, 45, 67, 87, 3, 87, 35, 75500]
+function smallestnumofArray(arry){
+let smallest = arry[0];
+for(let i = 0; i < arry.length; i++){
+    let currentelement = arry[i]
+  if(currentelement < smallest ){
+    smallest = currentelement;
+  }
+}
+return smallest ;
+}
+console.log(smallestnumofArray([34, 56, 78, 67,45, 1000]));
+console.log(smallestnumofArray(arr));
