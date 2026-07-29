@@ -99,7 +99,9 @@ if(stringg === reverseword){
 }
 console.log(ispalindrome("madam"));
 console.log(ispalindrome("SCHOOL"));
+
 // largest num of an array
+
 let arre = [1000, 45, 67, 87, 34, 87, 35, 75500]
 function largestnumofArray(array){
 let largest = array[0];
@@ -113,6 +115,7 @@ return largest;
 }
 console.log(largestnumofArray([34, 56, 78, 67,45, 1000]));
 console.log(largestnumofArray(arre));
+
 // samllest num of and array
 let arr = [1000, 45, 67, 87, 3, 87, 35, 75500]
 function smallestnumofArray(arry){
@@ -127,3 +130,92 @@ return smallest ;
 }
 console.log(smallestnumofArray([34, 56, 78, 67,45, 1000]));
 console.log(smallestnumofArray(arr));
+
+// function to sumup and divide sumup with the length of the array! 
+
+let add4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+function average(add4){
+    let sum = 0;
+for(let i = 0; i < add4.length; i++){
+    console.log(add4[i]);
+    sum = sum + add4[i];
+}
+let avg = sum / add4.length;
+return avg;
+}
+console.log(average(add4));
+console.log(average([50, 45, 67, 87, 3, 87, 35, 50]));
+
+  console.log("break")
+
+//   value more than 3
+
+function dd(numBer, value){
+let valuee = 3;
+let khali = [];
+for(let i = 0; i < numBer.length; i++){
+    if(numBer[i] > value){
+    khali.push(numBer[i])
+    }
+}
+return khali;
+}
+console.log(dd([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3));
+
+
+let student = {
+    Name : "Antor",
+    Roll : "268751",
+    semester : "3rd",
+    Attendance : "56 %",
+    favSub : "Social-science"
+}
+
+// object releated problems
+
+function objKeys(obj){
+    for(let key in student){
+    console.log(key)
+    }
+    for(let key in obj){
+    console.log(obj[key])
+    }
+    for(let key in obj){
+    console.log(key, ":", obj[key])
+    }
+    let objkeycount =Object.keys(obj).length;
+    console.log("Total properties", objkeycount)
+    let haveproperty = obj.hasOwnProperty("Name");
+    console.log("It has Name", haveproperty);
+}
+objKeys(student);
+
+// LAST ONE
+console.log("break")
+
+// Get evenNumbers from an array and sum it ''
+
+let diGit = [34, 65, 78, 98, 23, 4, 7, 8]
+function getEven(diGit){
+let sumofEV = [];
+for(let i = 0; i < diGit.length; i++){
+    if (diGit[i] % 2 === 0){
+        sumofEV.push(diGit[i])
+    }
+}
+return sumofEV;
+}
+
+function getSum(diGit){
+let sum = 0;
+for(let key of diGit){
+    console.log(key)
+    sum = sum + key;
+}
+return sum;
+}
+
+let evenNum = getEven(diGit);
+let sum = getSum(evenNum);
+console.log(sum);
+
