@@ -71,7 +71,6 @@ function vowelCount(digEt){
     let vowel = "aeiou";
 for(let i = 0; i < digEt.length; i++){
     const letter = digEt[i];
-    console.log("output", i, letter)
     if(vowel.includes(letter)){
         console.log("vowel")
         count++;
